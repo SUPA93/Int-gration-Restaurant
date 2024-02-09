@@ -429,10 +429,12 @@ header .header-text div h6 {
   margin: 30px 0;
 }
 .section4 .events-container .event-grid {
+  border: 1px solid rgb(221, 180, 145);
   display: grid;
-  grid-template-columns: 58% 42%;
+  grid-template-columns: 50% 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a b" "c b";
+  gap: 20px;
 }
 .section4 .events-container .event-grid .date-content {
   background: #21201e;
@@ -486,12 +488,50 @@ header .header-text div h6 {
   letter-spacing: 2px;
   margin-top: 25px;
 }
+.section4 .events-container .event-grid .event-left {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  text-align: left;
+}
+.section4 .events-container .event-grid .event-left .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section4 .events-container .event-grid .event-left .address {
+  color: #21201e;
+  padding: 30px 20px;
+}
 .section4 .events-container .event-grid .event-1 {
   grid-area: a;
 }
+.section4 .events-container .event-grid .event-1 .date {
+  background: url(../img/event-01.jpg) center/cover;
+}
 .section4 .events-container .event-grid .event-2 {
-  grid-area: b;
+  grid-area: c;
+}
+.section4 .events-container .event-grid .event-2 .date {
+  background: url(../img/event-02.jpg) center/cover;
 }
 .section4 .events-container .event-grid .event-3 {
-  grid-area: c;
+  grid-area: b;
+  background: url(../img/event-03.jpg) center/cover;
+  padding: 25px;
+}
+.section4 .events-container .event-grid .event-3 .address {
+  height: 100%;
+  padding: 0 12px;
+}
+.section4 .events-container .event-grid .event-3 .address h3 {
+  margin: 40px 0 15px;
+}
+.section4 .events-container .event-grid .event-3 .address h5 {
+  padding: 45px 0;
 }/*# sourceMappingURL=index.css.map */
