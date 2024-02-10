@@ -27,6 +27,12 @@
         width: 50%;
         margin: 30px auto;
         min-width: 500px;
+
+        @media screen and (max-width: 680px){
+            min-width: 200px;
+            width: 90%;
+            font-size: 0.75rem;
+        }
     }
 
     li {
@@ -46,6 +52,10 @@
         display: grid;
         grid-template-columns: 50% 50%;
         z-index: 100;
+
+        @media screen and (max-width: 680px){
+            grid-template-columns: 1fr;
+        }
 
         .meal {
             display: grid;

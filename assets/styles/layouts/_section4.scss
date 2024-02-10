@@ -35,6 +35,10 @@
                 "c b";
             gap: 20px;
 
+            @media screen and (max-width: 680px){
+                display: block;
+            }
+
 
             .date-content {
                 background: $black;
